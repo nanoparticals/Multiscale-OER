@@ -4,43 +4,61 @@ The Multiscale-OER model is a multi-scale model that we have constructed. This m
 
 1. Parameters Section
 Parameter 1: A variable required for the multi-scale model. Users can modify or add parameters to align simulations with experimental conditions. To check parameter usage in COMSOL, use Ctrl+F to search for variables.
+
 energy_barrier: Activation energy calculated via CatMap, including free energy changes.
+
 free_energy: Section for calculating free energy changes.
+
 Cdl: Double-layer capacitance estimated using Gouy-Chapman theory.
+
 Expressions:
 x2c: Converts mole fraction to molar concentration.
+
 c2x: Converts molar concentration to mole fraction.
+
 Activation energy calculation: Implemented in annotation an4 using CatMap.
+
 Equilibrium constants: Defined in annotation an5.
 
-2. Variables Section
+3. Variables Section
 Proton Group:
 Variable 1: Unifies variable names for the cathode region, aligning right boundary variables with electrolyte solution variables.
+
 Variable 2: Unifies variable names for the anode region, aligning left boundary variables with electrolyte solution variables.
+
 Variable 3: Unifies variables in the ion-exchange membrane with electrolyte variables.
+
 Anode/Cathode Reaction Rates: Includes detailed microkinetic equations, interface current density, and turnover frequency (TOF) calculations.
+
 sur: Converts domain variables to boundary variables for solving partial differential equations.
+
 Proton Diffusion Coefficient in Exchange Membranes: Equations for ion diffusion coefficients in membranes.
+
 aveop: Averages boundary ion concentrations to reduce errors in 2D/3D models.
+
 G: Computes free energy, activation energy, and reaction rate constants.
 
-3. Boundary ODEs
+
+5. Boundary ODEs
 Boundary ODE/DAE 1: Solves coverage of adsorbed intermediates for the anode OER (oxygen evolution reaction) using boundary ordinary differential equations.
+
 Boundary ODE/DAE 2: Solves coverage of adsorbed intermediates for the cathode HER (hydrogen evolution reaction) using boundary ordinary differential equations.
 
-4. Secondary Current Distribution
+7. Secondary Current Distribution
 Uses the Poisson equation to calculate ion concentration distributions in realistic electrolysis environments. Integrates microkinetically computed current densities into the total interfacial current density.
 
-5. Rare Material Transfer (Anode)
+8. Rare Material Transfer (Anode)
 Applies the Nernst-Planck equation (coupled with the Poisson equation in multiphysics) to compute reaction rates of interfacial ion concentrations and ion distribution in the electrolyte.
 
-6. Mesh Settings
+9. Mesh Settings
 Grid Type: "Extremely fine" mesh to resolve ion diffusion dynamics.
 
-7. Study Configuration
+10. Study Configuration
 Current Distribution Initialization: Reduces computation time and improves convergence.
+
 Solver Setup:
 Initialization: Fully coupled method with the PARDISO solver.
+
 Transient Multiphysics Model: Solved using the MUMPS solver.
 
 Let me know if you need further refinements! 🚀
