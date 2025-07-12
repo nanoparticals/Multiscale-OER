@@ -69,3 +69,4 @@ In the fcp folder, you can view all the initial structures from our DFT calculat
 
 The principles and usage instructions for FCP can be found at: https://github.com/hellozhaoming/FCP-vasp-ase.
 
+In the mesh_and_results folder, I have included the parameters, variables, boundary conditions, mesh settings, and model convergence results from COMSOL. All parameter names remain consistent with those mentioned above.
