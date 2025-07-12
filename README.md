@@ -65,7 +65,7 @@ The Multiscale-OER model is a multi-scale model that we have constructed. This m
 
 Let me know if you need further refinements! 🚀
 
-在fcp文件夹中可以看到我们DFT计算的所有未被结构优化的初始结构。在fcp_calculate文件夹中可以看到fcp.py脚本，在计算中，我们仅需要包括fcp.py和POSCAR并准备提交脚本，即可使用FCP进行计算。
+在fcp文件夹中可以看到我们DFT计算的所有未被结构优化的初始结构。在fcp_calculate文件夹中可以看到fcp.py脚本和适用于我所使用的计算机集群的提交脚本vasp-mu01.sh，在计算中，我们仅需要包括fcp.py和POSCAR并准备提交脚本，即可使用FCP进行计算。
 fcp的原理和使用方法在https://github.com/hellozhaoming/FCP-vasp-ase可以查阅。
 
 
