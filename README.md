@@ -65,7 +65,7 @@ The Multiscale-OER model is a multi-scale model that we have constructed. This m
 
 Let me know if you need further refinements! 🚀
 
-在fcp文件夹中可以看到我们DFT计算的所有未被结构优化的初始结构。在fcp_calculate文件夹中可以看到fcp.py脚本和适用于我所使用的计算机集群的提交脚本vasp-mu01.sh，在计算中，我们仅需要包括fcp.py和POSCAR并准备提交脚本，即可使用FCP进行计算。
-fcp的原理和使用方法在https://github.com/hellozhaoming/FCP-vasp-ase可以查阅。
+In the fcp folder, you can view all the initial structures from our DFT calculations that have not undergone structural optimization. In the fcp_calculate folder, you can find the fcp.py script and the submission script vasp-mu01.sh, which is tailored for the computing cluster I use. For the calculations, you only need to include fcp.py and POSCAR, along with preparing the submission script, to perform FCP calculations.
 
+The principles and usage instructions for FCP can be found at: https://github.com/hellozhaoming/FCP-vasp-ase.
 
