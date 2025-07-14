@@ -70,3 +70,5 @@ In the fcp folder, you can view all the initial structures from our DFT calculat
 The principles and usage instructions for FCP can be found at: https://github.com/hellozhaoming/FCP-vasp-ase.
 
 In the mesh_and_results folder, I have included the parameters, variables, boundary conditions, mesh settings, and model convergence results from COMSOL. All parameter names remain consistent with those mentioned above.
+
+我在fcp文件夹中放置了所有top位点，和bridge位点的.xsd文件，通过对这些文件进行结构优化，发现bridge位没有top位点稳定，这是我们采用top位的原因。（在对bridge初始构型进行结构优化过程中吸附物会转移到更稳定的top位）。
